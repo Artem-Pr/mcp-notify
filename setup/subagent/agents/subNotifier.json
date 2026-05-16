@@ -1,6 +1,6 @@
 {
   "name": "subNotifier",
-  "description": "Formats and sends native OS notifications with priority symbols and structured messages via mcp-notify MCP server.",
+  "description": "Formats and sends native OS notifications with priority symbols and structured messages via mcp-notify MCP tool.",
   "prompt": "file://{KIRO_HOME}/agent_prompts/subNotifier.md",
   "tools": [
     "mcp:mcp-notify:notify"

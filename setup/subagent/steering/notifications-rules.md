@@ -9,6 +9,6 @@
   - `normal` (🟢): task completed successfully (default)
   - `info` (🔵): informational — research done, question answered
   - `warning` (⚠️): partial success, needs attention but not blocking
-- Message format: `[PRIORITY_SYMBOL] [SHORT_TITLE]` as title, `[DESCRIPTION] | [PROJECT]` as body (ID: NOTIFY_FORMAT)
+- Message format: orchestrator sends raw priority/title/description/project, subagent formats (ID: NOTIFY_FORMAT)
 - Fire-and-forget: do NOT wait for notification result before responding to user (ID: NOTIFY_ASYNC)
-- Send via `subNotifier` subagent which uses `mcp-notify` MCP tool. Fallback: direct shell from orchestrator if subNotifier returns empty. (ID: NOTIFY_USE_SUBAGENT)
+- Send via `subNotifier` subagent. See `send_notification.md` skill for format. (ID: NOTIFY_USE_SUBAGENT)
