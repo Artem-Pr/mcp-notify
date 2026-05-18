@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "1.12.1",
-    "node-notifier": "10.0.1"
+    "node-notifier": "^10.0.1"
   },
   "devDependencies": {
     "@types/node": "22.15.3",
