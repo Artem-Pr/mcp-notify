@@ -4,11 +4,13 @@ An MCP server that sends native OS notifications. Works on Windows, macOS, Linux
 
 ## Platform Support
 
-| Platform | Method | Duration |
-|----------|--------|----------|
-| Windows / WSL | PowerShell Toast API | ~25s (long) |
-| macOS | osascript notification | system default |
-| Linux | notify-send (libnotify) | system default |
+Direct platform-native calls (no intermediary library):
+
+| Platform | Method | Notes |
+|----------|--------|-------|
+| Windows / WSL | PowerShell Toast API | Long-lived toast (~25s) |
+| macOS | osascript notification | System default |
+| Linux | notify-send (libnotify) | Requires notification daemon |
 
 ## Quick Install
 
@@ -204,4 +206,4 @@ npm start       # Run server (for testing)
 
 - **Always restart** your agent after changing any config files (agent JSON, MCP settings)
 - Both `autoApprove` (mcp.json) AND `tools`/`allowedTools` (agent config) are needed
-- The `notify` tool accepts `title` (string) and `message` (string)
+- The `notify` tool accepts `title` (string, default: "Kiro") and `message` (string)

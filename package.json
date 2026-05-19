@@ -1,6 +1,6 @@
 {
   "name": "mcp-notify",
-  "version": "1.1.0",
+  "version": "1.3.1",
   "description": "MCP server for native OS notifications",
   "type": "module",
   "main": "dist/index.js",
